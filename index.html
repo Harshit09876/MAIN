@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grocery store</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">
+        <i class="fas fa-shopping-basket"></i> Grocery
+      </a>
+      <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Features">features</a>
+        <a href="#Product">products</a>
+        <a href="#Categories">categories</a>
+        <a href="#Review">review</a>
+        
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-shopping-basket" id="cart-btn"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!--code-->
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+
+      <div class="cart">
+        <div class="cart-title">Cart items</div>
+        <div class="cart-content"></div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+        <btn class="btn-buy" >Place Order</btn>
+        <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>
+
+
+    </header>
+
+
+
+    <!---home--->
+
+    <section class="home" id="Home">
+      <div class="content">
+        <h3>Fresh And <span>Organic</span> Products For Your</h3>
+        <p>
+          Organica is where early adopters and innovation seekers find lively,
+          <br />
+          imaginative tech before it hits the mainstream.
+        </p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---features--->
+
+    <section class="features" id="Features">
+      <h2 class="heading">Our <span>Features</span></h2>
+      <div class="box-container">
+        <!-- Feature 1 -->
+        <div class="box">
+            <img
+              src="feature-img-1.png"
+              alt="Fresh and Organic"
+              class=""
+            />
+            <h3>Fresh And Organic</h3>
+            <p>Fresh Vegetables And Fruits In Cheap Price.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Feature 2 -->
+        
+         
+          <div class="box">
+            <img
+              src="feature-img-2.png"
+              alt="Free Delivery"
+            />
+            <h3>Free Delivery</h3>
+            <p>We Always Do Fast Delivery On Our Customers.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+        <!-- Feature 3 -->
+        
+          <div class="box">
+            <img
+              src="feature-img-3.png"
+              alt="Easy Payments"
+            />
+            <h4>Easy Payments</h4>
+            <p>It Is Very Easy To Pay On Our Website, You Can Pay Easily.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--products-->
+
+    <section class="features" id="Product">
+      <h2 class="heading">Our <span>products</span></h2>
+      <div class="box-container">
+        <!-- product 1 -->
+          <div class="box">
+            <img class="food-img"
+              src="product-1.png"
+              alt="Fresh and Organic"
+            />
+            <h3 class="food-title">Fresh Orange</h3>
+            <div class="price">Rs.70</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add To Cart</a>
+          </div>
+        
+
+
+        <!-- product 2 -->
+        <div class="box">
+            <img class="food-img" src="product-2.png" alt="Free Delivery" />
+            <h3 class="food-title">Fresh Onion</h3>
+            <div class="price">Rs.25</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add To Cart</a>
+          </div>
+
+        <!-- product 3 -->
+        <div class="box">
+            <img class="food-img" src="product-3.png" alt="Easy Payments"/>
+            <h3 class="food-title">Fresh Meat</h3>
+            <div class="price">Rs.200</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add To Cart</a>
+          </div>
+
+        <!-- product 4 -->
+        <div class="box">
+            <img class="food-img" src="product-4.png" alt="Easy Payments" />
+            <h3 class="food-title">Fresh Cabbage</h3>
+            <div class="price">Rs.40</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add To Cart</a>
+          </div>
+
+        <!-- product 5 -->
+        <div class="box">
+            <img class="food-img" src="product-5.png" alt="Easy Payments" />
+            <h3 class="food-title">Fresh Potato</h3>
+            <div class="price">Rs.30</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn ">Add To Cart</a>
+          </div>
+
+
+        <!-- product 6 -->
+        <div class="box">
+            <img class="food-img" src="product-6.png" alt="Easy Payments" />
+            <h3 class="food-title" >Fresh Avocado</h3>
+            <div class="price">Rs.90</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn ">Add To Cart</a>
+          </div>
+
+          <!--product 7-->
+          <div class="box">
+            <img class="food-img" src="product-7.png" alt="Easy Payments" />
+            <h3 class="food-title">Fresh Carrot</h3>
+            <div class="price">Rs.30 </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn ">Add To Cart</a>
+          </div>
+
+
+          <!--product 8-->
+          <div class="box">
+            <img class="food-img" src="product-8.png" alt="Easy Payments" />
+            <h3 class="food-title">Fresh lemon</h3>
+            <div class="price">Rs.30</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn ">Add To Cart</a>
+          </div>
+
+
+
+    </div>
+    
+</section>
+
+
+
+
+
+
+     <!--categories-->
+
+     <section class="categories" id="Categories">
+      <h2 class="heading">Product <span>Categories</span></h2>
+      <div class="box-container">
+        <!-- categories 1 -->
+          <div class="box">
+            <img src="cat-1.png"
+              alt="Vegetables"
+            />
+            <h3 >Vegetables</h3>
+            <div class="price">upto 45% off</div>
+            
+            <a href="#" class="btn">Shop Now</a>
+
+            <!--categories 2-->
+          </div>
+          <div class="box">
+            <img src="cat-2.png"
+              alt="fruits"
+            />
+            <h3 >Fresh Fruits</h3>
+            <div class="price">upto 35% off</div>
+            
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+          <div class="box">
+            <img src="cat-3.png"
+              alt="fruits"
+            />
+            <h3 >Dairy Products</h3>
+            <div class="price">upto 25% off</div>
+            
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+          <div class="box">
+            <img src="cat-4.png"
+              alt="fruits"
+            />
+            <h3 >Fresh Meat</h3>
+            <div class="price">upto 35% off</div>
+            
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+    </section>
+
+
+    
+<!--costomer's Review-->
+
+    <section class="features" id="Review">
+      <h2 class="heading">costomer's <span>review</span></h2>
+      <div class="box-container">
+        <!-- product 1 -->
+          <div class="box">
+            <img class="costomer"
+              src="pic-1.png"
+              alt="Fresh and Organic"
+            />
+            <p >Very Good Website. All the Stuff On this website is absolutely Great. You AI can buy Your Stuff Here.</p>
+            <h1 class="name">Jonathan</h1>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        
+
+
+        <!-- product 2 -->
+        <div class="box">
+            <img class="costomer" src="pic-2 - Copy.png" alt="Free Delivery" />
+            <p >Very Good Website. All the Stuff On this website is absolutely Great. You AI can buy Your Stuff Here.</p>
+            <h1 class="name">Oliveya</h1>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn btn-outline-primary">Read more</a>
+          </div>
+
+        <!-- product 3 -->
+        <div class="box">
+            <img class="costomer" src="pic-3.png" alt="Easy Payments"/>
+            <p >Very Good Website. All the Stuff On this website is absolutely Great. You AI can buy Your Stuff Here.</p>
+            <h1 class="name">Jhon</h1>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn btn-outline-primary">Read more</a>
+          </div>
+        </section>
+
+        <footer>
+  <div class="footer-section">
+    <h3>Grocery <i class="fas fa-shopping-basket"></i></h3>
+    <p>Website By...harshit rajpoot</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <h3>Contact Info</h3>
+    <p><i class="fas fa-phone"></i> +91 7678581153</p>
+    <p><i class="fas fa-phone"></i> +91 8094814331</p>
+    <p><i class="fas fa-envelope"></i> harshitrajpoot123.com@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Greater Noida, India - 201306</p>
+  </div>
+
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+    <div class="footer-links">
+      <a href="#Home"><i class="fas fa-arrow-right"></i> Home</a>
+      <a href="#Features"><i class="fas fa-arrow-right"></i> Features</a>
+      <a href="#Product"><i class="fas fa-arrow-right"></i> Products</a>
+      <a href="#Categories"><i class="fas fa-arrow-right"></i> Categories</a>
+    </div>
+  </div>
+
+  <div class="footer-section newsletter">
+    <h3>Newsletter</h3>
+    <p>Subscribe For Latest Updates</p>
+    <input type="email" placeholder="your email">
+    <br>
+    <button class="footer-btn">Subscribe</button>
+    <br><br>
+    <div class="payment-icons">
+      <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+      <img src="https://img.icons8.com/color/48/000000/mastercard.png"/>
+      <img src="https://img.icons8.com/color/48/000000/amex.png"/>
+      <img src="https://img.icons8.com/color/48/000000/discover.png"/>
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  Created By <span>Harshit</span> | All Rights Reserved
+</div>
+
+<script src="script.js"></script>
+
+  </body>
+  </html>
